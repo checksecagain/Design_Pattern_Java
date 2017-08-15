@@ -1,7 +1,5 @@
 package com.main.singelton.test;
 
-
-
 import java.lang.reflect.Constructor;
 
 import org.testng.Assert;
@@ -9,9 +7,10 @@ import org.testng.annotations.Test;
 import com.main.singelton.*;
 
 public class ReflectionSingeltonTest {
+	
   @Test
   public void EagerInitializationSingeltonTest() {
-	  EagerInitializationSingelton instanceFirst = EagerInitializationSingelton.getInstance();
+	  //EagerInitializationSingelton instanceFirst = EagerInitializationSingelton.getInstance();
 	  EagerInitializationSingelton instanceSecond = null;
 	  
 	  try {
@@ -24,6 +23,7 @@ public class ReflectionSingeltonTest {
 	  } catch (Exception e) {
 		  e.printStackTrace();
 	  }
-	  Assert.assertEquals(instanceFirst, instanceSecond);
+	  //Assert.assertEquals(instanceFirst, instanceSecond);
+	  Assert.assertNull(instanceSecond);
   }
 }
