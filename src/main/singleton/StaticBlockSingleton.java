@@ -1,22 +1,22 @@
-package main.singelton;
+package main.singleton;
 
-public class StaticBlockSingelton {
+public class StaticBlockSingleton {
 	
-	private static StaticBlockSingelton instance;
+	private static StaticBlockSingleton instance;
 	
-	private StaticBlockSingelton() {}
+	private StaticBlockSingleton() {}
 	
 	// Initializing instance variable at time of class loading through static block along with exceptional handling.
 	static {
 		try {
-			instance = new StaticBlockSingelton();
+			instance = new StaticBlockSingleton();
 		} catch (Exception e) {
 			System.out.println("Exception in creating singelton");
 		}
 	}
 	
 	// Accessing instance variable from outside.
-	public static StaticBlockSingelton getInstance() {
+	public static StaticBlockSingleton getInstance() {
 		return instance;
 	}
 	

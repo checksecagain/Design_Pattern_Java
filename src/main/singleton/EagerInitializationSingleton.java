@@ -1,14 +1,14 @@
 // Note: This method doesn't provide any option for exception handling.
 
-package main.singelton;
+package main.singleton;
 
-public class EagerInitializationSingelton {
+public class EagerInitializationSingleton {
 	
 	// This will create a new instance of the class when the class in being loaded.
-	private static final EagerInitializationSingelton instance = new EagerInitializationSingelton();
+	private static final EagerInitializationSingleton instance = new EagerInitializationSingleton();
 	
 	// Making constructor private so it cannot accessible from outside the class
-	private EagerInitializationSingelton() {
+	private EagerInitializationSingleton() {
 		
 		// If constructor in access using reflection then this condition don't allow it to create new object.
 		if (instance != null) {
@@ -17,7 +17,7 @@ public class EagerInitializationSingelton {
 	};
 	
 	// Return the instance of the class
-	public static EagerInitializationSingelton getInstance() {
+	public static EagerInitializationSingleton getInstance() {
 		return instance;
 	}
 }

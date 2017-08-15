@@ -1,17 +1,17 @@
 // Note: This method is better then all the previous ones because it is not using synchronized and also thread-safe as inter class only loaded into memory when someone called the getInstance method.
 
 
-package main.singelton;
+package main.singleton;
 
-public class BillPughSingelton {
+public class BillPughSingleton {
 	
-	private BillPughSingelton() {}
+	private BillPughSingleton() {}
 	
 	private static class SingeltonHelper {
-		private static final BillPughSingelton INSTANCE = new BillPughSingelton();
+		private static final BillPughSingleton INSTANCE = new BillPughSingleton();
 	}
 
-	public static BillPughSingelton getInstance() {
+	public static BillPughSingleton getInstance() {
 		return SingeltonHelper.INSTANCE;
 	}
 }

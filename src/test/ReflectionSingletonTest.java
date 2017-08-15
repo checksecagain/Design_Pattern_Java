@@ -5,20 +5,20 @@ import java.lang.reflect.Constructor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import main.singelton.*;
+import main.singleton.*;
 
-public class ReflectionSingeltonTest {
+public class ReflectionSingletonTest {
 	
   @Test
   public void EagerInitializationSingeltonTest() {
 	  //EagerInitializationSingelton instanceFirst = EagerInitializationSingelton.getInstance();
-	  EagerInitializationSingelton instanceSecond = null;
+	  EagerInitializationSingleton instanceSecond = null;
 	  
 	  try {
-		  Constructor<?>[] constructors = EagerInitializationSingelton.class.getDeclaredConstructors();
+		  Constructor<?>[] constructors = EagerInitializationSingleton.class.getDeclaredConstructors();
 		  for (Constructor<?> constructor: constructors) {
 			  constructor.setAccessible(true);
-			  instanceSecond = (EagerInitializationSingelton) constructor.newInstance();
+			  instanceSecond = (EagerInitializationSingleton) constructor.newInstance();
 			  break;
 		  }
 	  } catch (Exception e) {

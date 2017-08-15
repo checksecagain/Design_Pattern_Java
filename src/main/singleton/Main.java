@@ -1,13 +1,13 @@
-package main.singelton;
+package main.singleton;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		EagerInitializationSingelton instance = EagerInitializationSingelton.getInstance();
+		EagerInitializationSingleton instance = EagerInitializationSingleton.getInstance();
 		System.out.println(instance.hashCode());
 		
-		instance = EagerInitializationSingelton.getInstance();
+		instance = EagerInitializationSingleton.getInstance();
 		System.out.println(instance.hashCode());
 		
 		//StaticBlockSigelton instance2 = new StaticBlockSigelton();
