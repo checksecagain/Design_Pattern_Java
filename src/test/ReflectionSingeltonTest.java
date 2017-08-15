@@ -1,10 +1,11 @@
-package com.main.singelton.test;
+package test;
 
 import java.lang.reflect.Constructor;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.main.singelton.*;
+
+import main.singelton.*;
 
 public class ReflectionSingeltonTest {
 	

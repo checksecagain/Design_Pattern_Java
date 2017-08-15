@@ -1,6 +1,6 @@
 // Note: This method is not thread-safe as if multiple threads access the method at the same time then it will create multiple instance of the same class
 
-package com.main.singelton;
+package main.singelton;
 
 public class LazyInitialization {
 

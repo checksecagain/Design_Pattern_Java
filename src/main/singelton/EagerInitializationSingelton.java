@@ -1,6 +1,6 @@
 // Note: This method doesn't provide any option for exception handling.
 
-package com.main.singelton;
+package main.singelton;
 
 public class EagerInitializationSingelton {
 	

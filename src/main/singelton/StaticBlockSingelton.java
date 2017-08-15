@@ -1,4 +1,4 @@
-package com.main.singelton;
+package main.singelton;
 
 public class StaticBlockSingelton {
 	
