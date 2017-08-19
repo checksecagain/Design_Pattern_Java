@@ -5,7 +5,7 @@ import java.lang.reflect.Constructor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import main.singleton.*;
+import main.creational.singleton.*;
 
 public class ReflectionSingletonTest {
 	

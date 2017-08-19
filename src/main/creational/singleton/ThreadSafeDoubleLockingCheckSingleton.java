@@ -1,6 +1,6 @@
 // Note: This method reduce the overhead as synchronized block is only called for first few threads that are accessing the class at the same time.
 
-package main.singleton;
+package main.creational.singleton;
 
 public class ThreadSafeDoubleLockingCheckSingleton {
 

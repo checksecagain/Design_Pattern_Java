@@ -1,5 +1,5 @@
 // Note: This method provides thread safety but it reduces the performance because of the cost associated with the synchronized method.
-package main.singleton;
+package main.creational.singleton;
 
 public class ThreadSafeSingleton {
 	public static ThreadSafeSingleton instance;

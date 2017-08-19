@@ -1,7 +1,7 @@
 // Note: This method is better then all the previous ones because it is not using synchronized and also thread-safe as inter class only loaded into memory when someone called the getInstance method.
 
 
-package main.singleton;
+package main.creational.singleton;
 
 public class BillPughSingleton {
 	
