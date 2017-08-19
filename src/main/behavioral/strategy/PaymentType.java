@@ -1,4 +1,4 @@
-package main.behavior.strategy;
+package main.behavioral.strategy;
 
 public interface PaymentType {
 	
