@@ -1,4 +1,4 @@
-package main.behavioral.strategy;
+package main.behavioral.strategy.example1;
 
 import java.util.ArrayList;
 import java.util.List;
