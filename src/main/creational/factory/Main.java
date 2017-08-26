@@ -15,6 +15,8 @@ public class Main {
 			doStuffEnemy(enemyShipFactory.getEnemyShip(typeOfShip));
 		}
 		
+		userInput.close();
+		
 	}
 
 	public static void doStuffEnemy(EnemyShip anEnemyShip) {
